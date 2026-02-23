@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sheets2filtersite</title>
+    <link rel="dns-prefetch" href="//docs.google.com" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="app">
+      <header id="topbar">
+        <div id="breadcrumb">
+          <details id="sheet-disclosure">
+            <summary><span id="sheet-label"></span></summary>
+            <nav id="nav"></nav>
+          </details>
+          <span class="bc-sep">→</span>
+          <details id="tag-disclosure">
+            <summary><span id="tag-label">All</span></summary>
+            <div id="tags"></div>
+          </details>
+        </div>
+        <button id="search-toggle" aria-label="Search">🔎</button>
+        <input
+          type="search"
+          id="search"
+          placeholder="Search..."
+          autocomplete="off"
+        />
+      </header>
+      <main>
+        <div id="results"></div>
+        <div id="status"></div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
