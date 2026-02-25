@@ -1,5 +1,6 @@
 export const CONFIG = {
   title: "sheets2filtersite",
+  info: "A curated collection of tools and resources, sourced from Google Sheets.",
   pollInterval: 5 * 60 * 1000, // ms between background refreshes (0 to disable)
 
   // Column display defaults (applied to all sheets; can be overridden per sheet).
@@ -19,8 +20,8 @@ export const CONFIG = {
     //
     // { id: "webtools", label: "Web Tools", csvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-.../pub?gid=0&single=true&output=csv" },
     {
-      id: "webtools",
-      label: "Web Tools",
+      id: "tools",
+      label: "Tools",
       csvUrl:
         "https://docs.google.com/spreadsheets/d/e/2PACX-1vRy4xQfSm3ZjdtrjYoavc8sBIpGjj_zxJ4bhYBzDJ1g1UzE28FRUwPL9lkoNRwd4Q/pub?gid=183940277&single=true&output=csv",
     },
@@ -28,7 +29,7 @@ export const CONFIG = {
       id: "imgresources",
       label: "Image Resources",
       csvUrl:
-        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRy4xQfSm3ZjdtrjYoavc8sBIpGjj_zxJ4bhYBzDJ1g1UzE28FRUwPL9lkoNRwd4Q/pub?output=csv",
+        "https://docs.google.com/spreadsheets/d/e/2PACX-1vRy4xQfSm3ZjdtrjYoavc8sBIpGjj_zxJ4bhYBzDJ1g1UzE28FRUwPL9lkoNRwd4Q/pub?gid=423591686&single=true&output=csv",
     },
   ],
 };

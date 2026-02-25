@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>sheets2filtersite</title>
+    <title>tools4fools</title>
     <link rel="dns-prefetch" href="//docs.google.com" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -28,7 +28,31 @@
           placeholder="Search..."
           autocomplete="off"
         />
+        <div id="logo">🛠️4️⃣🎨</div>
+        <button id="info-btn" aria-label="About this site">ℹ</button>
       </header>
+      <dialog id="info-modal">
+        <button id="info-close" aria-label="Close">✕</button>
+        <div id="info-content">
+          <b>tools for fools</b>
+          <p>
+            Useful(?) links to various image-making tools and resources.
+            Collected on the occasion of Advanced Imagemaking Spring 2026. 
+            <p>
+              Any additions of suggestions for improvement can be made on the
+              spreadsheet
+              <a
+                href="https://docs.google.com/spreadsheets/d/1ffSs16vpXBRMqvyhHcGgN_UMJ1jzzXXU"
+                >here</a
+              >.
+            </p>
+            <p>The site is built on a custom system that converts Google Sheets
+            into filterable/searchable webpages. Each sheet corresponds to a
+            page. The source code is open and available on
+            <a href="https://github.com/o-o-o-o-o/toolz4foolz">GitHub</a>.</p>
+          </p>
+        </div>
+      </dialog>
       <main>
         <div id="results"></div>
         <div id="status"></div>

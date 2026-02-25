@@ -344,6 +344,21 @@ function initDisclosures() {
   });
 }
 
+// --- Info modal ---
+
+function initInfoModal() {
+  const btn = document.getElementById("info-btn");
+  const modal = document.getElementById("info-modal");
+  const closeBtn = document.getElementById("info-close");
+  if (!btn || !modal) return;
+
+  btn.addEventListener("click", () => modal.showModal());
+  closeBtn.addEventListener("click", () => modal.close());
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) modal.close();
+  });
+}
+
 // --- Init ---
 
 function init() {
@@ -359,6 +374,7 @@ function init() {
   initRouter();
   initSearch();
   initDisclosures();
+  initInfoModal();
   subscribe(update);
   renderFooter(); // show any persisted timestamp immediately
 
